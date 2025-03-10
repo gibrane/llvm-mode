@@ -82,9 +82,9 @@
 
 (defvar tablegen-mode-map
   (let ((map (make-sparse-keymap)))
-    (define-key map "<tab>" 'tab-to-tab-stop)
-    (define-key map "\es" 'center-line)
-    (define-key map "\eS" 'center-paragraph)
+    (keymap-set map "<tab>" 'tab-to-tab-stop)
+    (keymap-set map "M-s" 'center-line)
+    (keymap-set map "M-S" 'center-paragraph)
     map))
 
 ;;;###autoload
